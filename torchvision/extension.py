@@ -62,13 +62,13 @@ def _check_cuda_version():
         t_version = t_version.split(".")
         t_major = int(t_version[0])
         t_minor = int(t_version[1])
-        if t_major != tv_major or t_minor != tv_minor:
-            raise RuntimeError(
-                "Detected that PyTorch and torchvision were compiled with different CUDA versions. "
-                f"PyTorch has CUDA Version={t_major}.{t_minor} and torchvision has "
-                f"CUDA Version={tv_major}.{tv_minor}. "
-                "Please reinstall the torchvision that matches your PyTorch install."
-            )
+#         if t_major != tv_major or t_minor != tv_minor:
+#             raise RuntimeError(
+#                 "Detected that PyTorch and torchvision were compiled with different CUDA versions. "
+#                 f"PyTorch has CUDA Version={t_major}.{t_minor} and torchvision has "
+#                 f"CUDA Version={tv_major}.{tv_minor}. "
+#                 "Please reinstall the torchvision that matches your PyTorch install."
+#             )
     return _version
 
 
